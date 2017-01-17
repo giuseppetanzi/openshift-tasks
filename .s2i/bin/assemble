@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "Custom assemble......."
+echo $MYVAR
 ls .
 pwd
 
