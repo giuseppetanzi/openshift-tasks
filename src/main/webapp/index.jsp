@@ -169,7 +169,7 @@
   while( headers.hasMoreElements()) 
        { 
         String hName = headers.nextElement();
-  	out.println( hName + ": " + request.getHeader( hName ) + "\n");
+  	out.println( hName + ": " + request.getHeader( hName ) + "; ");
 	}
   			
   %>
