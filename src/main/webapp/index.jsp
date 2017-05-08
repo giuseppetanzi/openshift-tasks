@@ -167,7 +167,7 @@
 			    <%
   java.util.Enumeration<String> headers = request.getHeaderNames();
   while( headers.hasMoreElements()) 
-  	out.println( headers.next());
+  	out.println( headers.nextElement());
   			
   %>
 			  
