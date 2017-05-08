@@ -158,6 +158,10 @@
                     <td>Client address</td>
                     <td><%= request.getRemoteAddr() %></td>
                   </tr>
+                  <tr role="row" class="even">
+                    <td>Header Client IP</td>
+                    <td><%= request.getHeader("Client-IP") %></td>
+                  </tr>
                 </table>
               </div>
             </div>
