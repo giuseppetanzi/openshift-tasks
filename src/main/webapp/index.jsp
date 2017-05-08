@@ -166,7 +166,7 @@
                     <td>
 			    <%
   String[] headers = request.getHeaderNames();
-  for( iny i = 0; i < headers.length; i++) 
+  for( int i = 0; i < headers.length; i++) 
   	out.println( headers[ 0 ] + "\n");
   			
   
