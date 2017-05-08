@@ -1,3 +1,6 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>  
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
+
 <!DOCTYPE html>
 <!--[if IE 9]><html lang="en-us" class="ie9"><![endif]-->
 <!--[if gt IE 9]><!-->
@@ -158,6 +161,19 @@
                     <td>Client address</td>
                     <td><%= request.getRemoteAddr() %></td>
                   </tr>
+                  <tr role="row" class="even">
+                    <td>Headers</td>			  
+                    <td>
+			    <%
+  String[] headers = request.getHeaderNames();
+  for( iny i = 0; i < headers.length; i++) 
+  	out.println( headers[ 0 ] + "\n");
+  			
+  
+  %>
+			  
+			  </td>
+                  </tr>			
                 </table>
               </div>
             </div>
