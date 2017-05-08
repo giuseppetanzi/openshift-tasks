@@ -154,6 +154,10 @@
                     <td>Session ID</td>
                     <td><%= session.getId() %></td>
                   </tr>
+                  <tr role="row" class="even">
+                    <td>Client address</td>
+                    <td><%= request.getRemoteAddr() %></td>
+                  </tr>
                 </table>
               </div>
             </div>
