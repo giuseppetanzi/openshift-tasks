@@ -165,11 +165,10 @@
                     <td>Headers</td>			  
                     <td>
 			    <%
-  String[] headers = request.getHeaderNames();
-  for( int i = 0; i < headers.length; i++) 
-  	out.println( headers[ 0 ] + "\n");
+  java.util.Enumeration<String> headers = request.getHeaderNames();
+  while( headers.hasMoreElements()) 
+  	out.println( headers.next());
   			
-  
   %>
 			  
 			  </td>
